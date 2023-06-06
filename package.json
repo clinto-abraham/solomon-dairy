@@ -1,0 +1,28 @@
+{
+  "name": "solomon-diary",
+  "private": true,
+  "version": "1.0.1",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "preact": "^10.13.2"
+  },
+  "devDependencies": {
+    "@preact/preset-vite": "^2.5.0",
+    "vite": "^4.3.9"
+  },
+  "description": "Preact app with solomon's diary in core concept with wisdom pointing out to word of god in logical conclusion",
+  "keywords": [
+    "Word of God",
+    "wisdom",
+    "solomon",
+    "Jesus",
+    "Christ"
+  ],
+  "author": "clinto92@gmail.com",
+  "license": "MIT"
+}
