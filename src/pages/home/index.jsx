@@ -1,9 +1,9 @@
-import { TopBar } from "../../components/topbar";
+import { Navbar } from "../../components/navbar";
 
 export function Home() {
   return (
     <>
-      <TopBar />
+      <Navbar />
 
       {/* Hero Section */}
       <section id="hero">
