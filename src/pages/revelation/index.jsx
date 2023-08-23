@@ -1,9 +1,9 @@
-import { TopBar } from "../../components/topbar";
+import { Navbar } from "../../components/navbar";
 
 const Revelation = () => {
   return (
     <div>
-      <TopBar />
+      <Navbar />
 
       <h1>Revelation</h1>
     </div>
