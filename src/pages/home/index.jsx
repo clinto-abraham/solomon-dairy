@@ -52,7 +52,7 @@ export function Home() {
             />
 
             <button class="px-10 py-3 text-white bg-cyan rounded-lg hover:bg-cyanLight focus:outline-none md:py-2">
-              Shorten It!
+              Important Links!
             </button>
 
             {/* Error Message */}
@@ -65,11 +65,13 @@ export function Home() {
           {/* Link 1 */}
           <div class="flex flex-col items-center justify-between w-full p-6 bg-white rounded-lg md:flex-row">
             <p class="font-bold text-center text-veryDarkViolet md:text-left">
-              https://frontendmentor.io
+              Third Temple
             </p>
 
             <div class="flex flex-col items-center justify-end flex-1 space-x-4 space-y-2 md:flex-row md:space-y-0">
-              <div class="font-bold text-cyan">https://rel.ink/k4IKyk</div>
+              <div class="font-bold text-cyan">
+                https://thirdtemple.org/en/project/
+              </div>
               <button class="p-2 px-8 text-white bg-cyan rounded-lg hover:opacity-70 focus:outline-none">
                 Copy
               </button>

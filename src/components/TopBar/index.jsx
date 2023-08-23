@@ -20,10 +20,16 @@ export const TopBar = () => {
           {/* <img src="logo.svg" alt="" /> */}
           {/* Left Menu */}
           <div class="hidden space-x-8 font-bold lg:flex">
-            <a href="#" class="text-grayishViolet hover:text-veryDarkViolet">
+            <a
+              href="/salvation"
+              class="text-grayishViolet hover:text-veryDarkViolet"
+            >
               Salvation
             </a>
-            <a href="#" class="text-grayishViolet hover:text-veryDarkViolet">
+            <a
+              href="/repentance-of-sins"
+              class="text-grayishViolet hover:text-veryDarkViolet"
+            >
               Repentance of sins
             </a>
             <a
@@ -37,9 +43,11 @@ export const TopBar = () => {
 
         {/* Right Buttons Menu */}
         <div class="hidden items-center space-x-6 font-bold text-grayishViolet lg:flex">
-          <div class="hover:text-veryDarkViolet">Login</div>
+          <a href="/login">
+            <div class="hover:text-veryDarkViolet">Login</div>
+          </a>
           <a
-            href="#"
+            href="/sign-up"
             class="px-8 py-3 font-bold text-white bg-cyan rounded-full hover:opacity-70"
           >
             Sign Up
@@ -64,19 +72,25 @@ export const TopBar = () => {
         class="absolute hidden p-6 rounded-lg bg-darkViolet left-6 right-6 top-20 z-100"
       >
         <div class="flex flex-col items-center justify-center w-full space-y-6 font-bold text-white rounded-sm">
-          <a href="#" class="w-full text-center">
-            Features
+          <a href="/salvation" class="w-full text-center">
+            Salvation
           </a>
-          <a href="#" class="w-full text-center">
-            Pricing
+          <a href="repentance-of-sins" class="w-full text-center">
+            Repentance of sins
           </a>
-          <a href="#" class="w-full text-center">
-            Resources
+          <a href="/revelations" class="w-full text-center">
+            Revelations
           </a>
-          <a href="#" class="w-full pt-6 border-t border-gray-400 text-center">
+          <a
+            href="/login"
+            class="w-full pt-6 border-t border-gray-400 text-center"
+          >
             Login
           </a>
-          <a href="#" class="w-full py-3 text-center rounded-full bg-cyan">
+          <a
+            href="/sign-up"
+            class="w-full py-3 text-center rounded-full bg-cyan"
+          >
             Sign Up
           </a>
         </div>
