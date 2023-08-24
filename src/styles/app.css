@@ -522,6 +522,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   bottom: 0.75rem;
 }
 
+.top-36 {
+  top: 9rem;
+}
+
 .top-24 {
   top: 6rem;
 }
@@ -901,6 +905,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   color: rgb(156 163 175 / var(--tw-text-opacity));
 }
 
+.text-white {
+  color: whitesmoke;
+}
+
 .text-red {
   --tw-text-opacity: 1;
   color: hsl(0 87% 67% / var(--tw-text-opacity));
@@ -1014,6 +1022,37 @@ Ensure the default browser behavior of the `hidden` attribute.
   outline-offset: 2px;
 }
 
+
+
+
+.third {
+  background-color: #E48586;
+  width: 100%;
+  min-height: 100vh;
+  /* transform: skew(0deg, 5deg); */
+}
+
+.fourth {
+  background-color: #FDE5EC;
+  width: 100%;
+  min-height: 100vh;
+}
+
+.fifth {
+  background-color: #FCBAAD;
+  width: 100%;
+  min-height: 100vh;
+}
+
+/* .sixth {
+  background-color: #916DB3;
+  width: 100%;
+  min-height: 100vh;
+} */
+
+
+
+
 @media (min-width: 768px) {
   .md\:left-16 {
     left: 4rem;
@@ -1045,6 +1084,11 @@ Ensure the default browser behavior of the `hidden` attribute.
 
   .md\:max-w-md {
     max-width: 28rem;
+  }
+
+  .md\:max-w-lg {
+    max-width: 48rem;
+
   }
 
   .md\:flex-row {
