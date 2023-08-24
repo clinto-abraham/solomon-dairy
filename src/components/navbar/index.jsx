@@ -1,6 +1,4 @@
-import React from "react";
-
-export const Navbar = () => {
+const Navbar = () => {
   return (
     <nav class="relative container mx-auto p-6">
       {/* Flex Container For All Items */}
@@ -98,3 +96,5 @@ export const Navbar = () => {
     </nav>
   );
 };
+
+export default Navbar;
