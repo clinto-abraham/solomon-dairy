@@ -1,3 +1,4 @@
+import WordOfGodSearch from "../../components/SearchBars/wordOfGodSearch";
 import Third from "./third";
 
 export default function Home() {
@@ -35,6 +36,7 @@ export default function Home() {
           </div>
         </div>
       </section>
+      <WordOfGodSearch />
 
       {/* Stats Section */}
       <section id="stats" className="py-24 bg-gray-100">
