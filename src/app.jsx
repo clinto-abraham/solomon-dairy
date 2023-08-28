@@ -59,7 +59,7 @@ function App() {
     <div>
       <RouterProvider
         router={router}
-        fallbackElement={<p>Initial Load...</p>}
+        fallbackElement={<p>Initial Load... skeleton will be added soon</p>}
       />
     </div>
   );
