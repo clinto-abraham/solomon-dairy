@@ -48,7 +48,7 @@ html {
 
 /*
 1. Remove the margin in all browsers.
-2. Inherit line-height from `html` so users can set them as a class directly on the `html` element.
+2. Inherit line-height from `html` so users can set them as a className directly on the `html` element.
 */
 
 body {
@@ -940,7 +940,7 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 
 #cta {
-  background-image: url('../images/bg-boost-desktop.svg');
+  background-image: url('./bg-boost-desktop.svg');
   background-repeat: no-repeat;
   background-size: cover;
 }
