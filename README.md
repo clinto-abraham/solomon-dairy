@@ -1,9 +1,17 @@
 # solomon-dairy
 Solomon-diary has been deployed on https:jesus-christ.world or www.jesus-christ.world
 
-### PREACT Application
-https://preactjs.com/
-1. Fast 3kB alternative to React with the same modern API
-2. The main difference between Preact and React is that Preact does not implement a synthetic event system for size and performance reasons. Preact uses the browser's standard addEventListener to register event handlers, which means event naming and behavior works the same in Preact as it does in plain JavaScript / DOM.
+### REACT Application
+
+1. 
+2. 
 3. 
 
+
+# React + Vite
+This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+
+Currently, two official plugins are available:
+
+- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
+- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh

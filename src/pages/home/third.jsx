@@ -1,9 +1,12 @@
-import React from "react";
-export function Third({}) {
+import { Outlet } from "react-router-dom";
+
+export default function Third() {
   return (
-    <div class="container mx-auto px-3">
-      <h2 class="text-4xl mb-6 font-bold text-center">Third Temple History</h2>
-      <p class="max-w-xs mx-auto text-white md:max-w-lg md:text-left">
+    <div className="container mx-auto px-3">
+      <h2 className="text-4xl mb-6 font-bold text-center">
+        Third Temple History
+      </h2>
+      <p className="max-w-xs mx-auto text-white md:max-w-lg md:text-left">
         The world was born in Jerusalem. When G-d ‘took the Land out of the
         water through the Foundation Stone located in Mt. Moriah. On this
         mountain, which spans 760 meters tall, is the Foundation Stone,Even
@@ -45,6 +48,10 @@ export function Third({}) {
         Torah, the nation of Israel successfully preserved the desire to restore
         Jerusalem.
       </p>
+
+      <div>
+        <Outlet />
+      </div>
     </div>
   );
 }
