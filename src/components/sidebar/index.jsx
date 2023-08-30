@@ -27,6 +27,7 @@ import Avatar from "@mui/material/Avatar";
 import Button from "@mui/material/Button";
 import Tooltip from "@mui/material/Tooltip";
 import MenuItem from "@mui/material/MenuItem";
+import Navbar from "../navbar";
 const pages = ["Salvation", "Repentance Of Sins", "Revelation"];
 const settings = ["Profile", "Account", "Dashboard", "Logout"];
 
@@ -127,7 +128,8 @@ export default function MiniDrawer() {
   return (
     <Box sx={{ display: "flex" }}>
       <CssBaseline />
-      <AppBar
+      <Navbar />
+      {/* <AppBar
         position="fixed"
         open={open}
         sx={{ opacity: 0.5, backgroundColor: "inherit" }}
@@ -199,7 +201,8 @@ export default function MiniDrawer() {
             </Menu>
           </Box>
         </Toolbar>
-      </AppBar>
+      </AppBar> */}
+
       <Drawer variant="permanent" open={open}>
         <DrawerHeader>
           <IconButton
