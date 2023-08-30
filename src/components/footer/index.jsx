@@ -1,6 +1,6 @@
 export default function Footer() {
   return (
-    <footer className="py-16 bg-veryDarkViolet">
+    <footer className="px-24 py-16 bg-veryDarkViolet">
       <div className="container flex flex-col items-center justify-between mx-auto space-y-16 md:flex-row md:space-y-0 md:items-start">
         {/* Logo */}
         <img src="cross-red.png" alt="" />
