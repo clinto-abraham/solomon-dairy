@@ -7,15 +7,20 @@ import ErrorBoundary from "./components/Errors/ErrorBoundary";
 import ErrorElement from "./components/Errors/ErrorElement";
 import LayoutSkeleton from "./components/skeletons/layoutSkeleton";
 import BasicSpeedDial from "./components/SpeedDial";
-import MiniDrawer from "./components/sidebar";
 import Footer from "./components/footer";
+import { store } from "./redux/store";
+import { Provider } from "react-redux";
+import SideBar from "./components/sidebar";
+import Navbar from "./components/navbar";
+
 const Revelation = lazy(() => import("./pages/revelation"));
 const Home = lazy(() => import("./pages/home"));
 
 function Layout() {
   return (
     <>
-      <MiniDrawer />
+      <Navbar />
+      <SideBar />
       <BasicSpeedDial />
       <Footer />
     </>
@@ -58,11 +63,11 @@ const router = createBrowserRouter([
 
 function App() {
   return (
-    <div>
+    <Provider store={store}>
       <Suspense fallback={<LayoutSkeleton />}>
         <RouterProvider router={router} fallbackElement={<LayoutSkeleton />} />
       </Suspense>
-    </div>
+    </Provider>
   );
 }
 
