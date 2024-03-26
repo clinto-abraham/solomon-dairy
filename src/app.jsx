@@ -12,9 +12,11 @@ import { store } from "./redux/store";
 import { Provider } from "react-redux";
 import SideBar from "./components/sidebar";
 import Navbar from "./components/navbar";
+import Home from "./pages/home";
 
 const Revelation = lazy(() => import("./pages/revelation"));
-const Home = lazy(() => import("./pages/home"));
+const Summary = lazy(() => import("./pages/Summary"));
+const History = lazy(() => import("./pages/History"));
 
 function Layout() {
   return (
@@ -40,11 +42,9 @@ const router = createBrowserRouter([
       {
         index: true,
         element: (
-          <Suspense fallback={<LayoutSkeleton />}>
             <ErrorBoundary name="Home">
               <Home />
             </ErrorBoundary>
-          </Suspense>
         ),
       },
       {
@@ -57,6 +57,26 @@ const router = createBrowserRouter([
           </Suspense>
         ),
       },
+      {
+        path: "summary",
+        element: (
+          <Suspense fallback={<LayoutSkeleton />}>
+            <ErrorBoundary name="Summary">
+              <Summary />
+            </ErrorBoundary>
+          </Suspense>
+        ),
+      },
+      {
+        path: "history",
+        element: (
+          <Suspense fallback={<LayoutSkeleton />}>
+            <ErrorBoundary name="History">
+              <History />
+            </ErrorBoundary>
+          </Suspense>
+        ),
+      },
     ],
   },
 ]);
@@ -64,9 +84,7 @@ const router = createBrowserRouter([
 function App() {
   return (
     <Provider store={store}>
-      <Suspense fallback={<LayoutSkeleton />}>
         <RouterProvider router={router} fallbackElement={<LayoutSkeleton />} />
-      </Suspense>
     </Provider>
   );
 }
