@@ -16,7 +16,7 @@ import Box from "@mui/material/Box";
 import { styled } from "@mui/material/styles";
 import { anchorElReducer, navGateReducer } from "../../redux/navSlice";
 
-const pages = ["Salvation", "Repentance Of Sins", "Revelation"];
+const pages = ["History", "Repentance","Evidence", "Revelation",'Summary'];
 const settings = ["Profile", "Account", "Dashboard", "Logout"];
 const drawerWidth = 240;
 
